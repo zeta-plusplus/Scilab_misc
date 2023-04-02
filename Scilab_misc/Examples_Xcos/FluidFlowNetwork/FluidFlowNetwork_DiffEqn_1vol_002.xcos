@@ -766,7 +766,7 @@
       </BasicBlock>
       <ExplicitInputPort id="192bc7ba:18719123bd4:-7f9d" parent="192bc7ba:18719123bd4:-7f9e" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ControlPort id="192bc7ba:18719123bd4:-7f9c" parent="192bc7ba:18719123bd4:-7f9e" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ControlPort;align=center;verticalAlign=top;spacing=10.0;rotation=90" value=""/>
-      <BasicBlock id="-39108d85:1873bd5feeb:-7f1e" parent="0:2:0" interfaceFunctionName="scifunc_block_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="scifunc" simulationFunctionType="TYPE_3" style="scifunc_block_m">
+      <BasicBlock id="-39108d85:1873bd5feeb:-7f1e" parent="0:2:0" interfaceFunctionName="scifunc_block_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="scifunc" simulationFunctionType="TYPE_3" style="scifunc_block_m" value="generic_dp">
         <Array as="exprs" scilabClass="ScilabList">
           <ScilabString height="9" width="1">
             <data line="0" column="0" value="[2,1; 2,1]"/>
@@ -926,12 +926,15 @@
         <Array as="oDState" scilabClass="ScilabList"/>
         <Array as="equations" scilabClass="ScilabList"/>
         <mxGeometry as="geometry" x="-60.0" y="90.0" width="70.0" height="60.0"/>
+        <mxCell connectable="0" id="-39108d85:1873bd5feeb:-7f1e#identifier" style="noLabel=0;opacity=0" value="&lt;p style=&quot;margin-top: 0&quot;&gt;       generic_dp     &lt;/p&gt;" vertex="1">
+          <mxGeometry as="geometry" x="35.0" y="66.0" width="0.0" height="0.0"/>
+        </mxCell>
       </BasicBlock>
       <ExplicitInputPort id="-39108d85:1873bd5feeb:-7f1d" parent="-39108d85:1873bd5feeb:-7f1e" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="2" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ExplicitInputPort id="-39108d85:1873bd5feeb:-7f1c" parent="-39108d85:1873bd5feeb:-7f1e" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="2" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ExplicitOutputPort id="-39108d85:1873bd5feeb:-7f19" parent="-39108d85:1873bd5feeb:-7f1e" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="2" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ExplicitOutputPort id="-39108d85:1873bd5feeb:-7f18" parent="-39108d85:1873bd5feeb:-7f1e" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="2" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
-      <BasicBlock id="-39108d85:1873bd5feeb:-7f11" parent="0:2:0" interfaceFunctionName="scifunc_block_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="scifunc" simulationFunctionType="TYPE_3" style="scifunc_block_m">
+      <BasicBlock id="-39108d85:1873bd5feeb:-7f11" parent="0:2:0" interfaceFunctionName="scifunc_block_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="scifunc" simulationFunctionType="TYPE_3" style="scifunc_block_m" value="generic_dp">
         <Array as="exprs" scilabClass="ScilabList">
           <ScilabString height="9" width="1">
             <data line="0" column="0" value="[2,1; 2,1]"/>
@@ -1091,6 +1094,9 @@
         <Array as="oDState" scilabClass="ScilabList"/>
         <Array as="equations" scilabClass="ScilabList"/>
         <mxGeometry as="geometry" x="340.0" y="100.0" width="70.0" height="60.0"/>
+        <mxCell connectable="0" id="-39108d85:1873bd5feeb:-7f11#identifier" style="noLabel=0;opacity=0" value="&lt;p style=&quot;margin-top: 0&quot;&gt;       generic_dp     &lt;/p&gt;" vertex="1">
+          <mxGeometry as="geometry" x="35.0" y="66.0" width="0.0" height="0.0"/>
+        </mxCell>
       </BasicBlock>
       <ExplicitInputPort id="-39108d85:1873bd5feeb:-7f10" parent="-39108d85:1873bd5feeb:-7f11" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="2" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ExplicitInputPort id="-39108d85:1873bd5feeb:-7f0f" parent="-39108d85:1873bd5feeb:-7f11" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="2" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
