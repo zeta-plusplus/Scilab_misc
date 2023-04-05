@@ -1517,9 +1517,22 @@
       <ExplicitOutputPort id="6191a88d:18741966c83:-7f97" parent="6191a88d:18741966c83:-7f9a" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ExplicitOutputPort id="6191a88d:18741966c83:-7f96" parent="6191a88d:18741966c83:-7f9a" ordering="3" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <SuperBlock id="6191a88d:18741966c83:-7f8c" parent="0:2:0" interfaceFunctionName="SUPER_f" blockType="h" dependsOnU="0" dependsOnT="0" simulationFunctionName="super" simulationFunctionType="DEFAULT" style="SUPER_f;rotation=0" value="VolDyn">
-        <ScilabDouble as="exprs" height="0" width="0"/>
+        <Array as="exprs" scilabClass="ScilabList">
+          <ScilabDouble height="0" width="0"/>
+          <Array scilabClass="ScilabList">
+            <ScilabDouble height="0" width="0"/>
+            <ScilabString height="1" width="1">
+              <data line="0" column="0" value="ブロック・パラメータ設定"/>
+            </ScilabString>
+            <Array scilabClass="ScilabList">
+              <ScilabDouble height="0" width="0"/>
+            </Array>
+          </Array>
+        </Array>
         <ScilabDouble as="realParameters" height="0" width="0"/>
-        <ScilabDouble as="integerParameters" height="0" width="0"/>
+        <ScilabInteger as="integerParameters" height="1" width="1" intPrecision="sci_int32">
+          <data line="0" column="0" value="1"/>
+        </ScilabInteger>
         <Array as="objectsParameters" scilabClass="ScilabList"/>
         <ScilabInteger as="nbZerosCrossing" height="1" width="1" intPrecision="sci_int32">
           <data line="0" column="0" value="0"/>
@@ -1536,7 +1549,11 @@
           <mxGeometry as="geometry" x="25.0" y="44.0" width="0.0" height="0.0"/>
         </mxCell>
         <SuperBlockDiagram as="child" background="-1" gridEnabled="1" title="">
-          <Array as="context" scilabClass="String[]"></Array>
+          <Array as="context" scilabClass="String[]">
+            <add value="Vol_par= 1.0"/>
+            <add value="R_par= 287"/>
+            <add value="Cp_par= 1.004*1000"/>
+          </Array>
           <mxGraphModel as="model">
             <root>
               <mxCell id="6191a88d:18741966c84:-7f8c"/>
@@ -1558,7 +1575,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="520.0" y="530.0" width="30.0" height="40.0"/>
+                <mxGeometry as="geometry" x="750.0" y="150.0" width="30.0" height="40.0"/>
               </BasicBlock>
               <ExplicitInputPort id="-39108d85:1873bd5feeb:-7edc" parent="-39108d85:1873bd5feeb:-7edd" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitInputPort id="-39108d85:1873bd5feeb:-7edb" parent="-39108d85:1873bd5feeb:-7edd" ordering="2" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1582,7 +1599,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="590.0" y="540.0" width="20.0" height="20.0"/>
+                <mxGeometry as="geometry" x="820.0" y="160.0" width="20.0" height="20.0"/>
               </ExplicitOutBlock>
               <ExplicitInputPort id="6191a88d:18741966c83:-7f84" parent="6191a88d:18741966c83:-7f85" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitInBlock id="6191a88d:18741966c83:-7f89" parent="6191a88d:18741966c85:-7f8c" interfaceFunctionName="IN_f" blockType="c" dependsOnU="0" dependsOnT="0" simulationFunctionName="input" simulationFunctionType="DEFAULT" style="IN_f">
@@ -1606,7 +1623,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="-110.0" y="530.0" width="20.0" height="20.0"/>
+                <mxGeometry as="geometry" x="120.0" y="150.0" width="20.0" height="20.0"/>
               </ExplicitInBlock>
               <ExplicitOutputPort id="6191a88d:18741966c83:-7f88" parent="6191a88d:18741966c83:-7f89" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <BasicBlock id="b70e779:1870e817cca:-7f54" parent="6191a88d:18741966c85:-7f8c" interfaceFunctionName="scifunc_block_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="scifunc" simulationFunctionType="TYPE_3" style="scifunc_block_m">
@@ -1618,15 +1635,15 @@
                     <data line="3" column="0" value="[]"/>
                     <data line="4" column="0" value="[]"/>
                     <data line="5" column="0" value="[]"/>
-                    <data line="6" column="0" value="[]"/>
+                    <data line="6" column="0" value="[Vol_par, R_par, Cp_par]"/>
                     <data line="7" column="0" value="[]"/>
                     <data line="8" column="0" value="0"/>
                   </ScilabString>
                   <Array scilabClass="ScilabList">
                     <ScilabString height="30" width="1">
-                      <data line="0" column="0" value="Vol= 1.0"/>
-                      <data line="1" column="0" value="R= 287.0"/>
-                      <data line="2" column="0" value="Cp= 1.004*1000"/>
+                      <data line="0" column="0" value="Vol= rpar(1)"/>
+                      <data line="1" column="0" value="R= rpar(2)"/>
+                      <data line="2" column="0" value="Cp= rpar(3)"/>
                       <data line="3" column="0" value=""/>
                       <data line="4" column="0" value="//--------------------"/>
                       <data line="5" column="0" value="sum_m_flow= u1"/>
@@ -1679,15 +1696,19 @@
                     </ScilabString>
                   </Array>
                 </Array>
-                <ScilabDouble as="realParameters" height="0" width="0"/>
+                <ScilabDouble as="realParameters" height="1" width="3">
+                  <data line="0" column="0" realPart="0.1"/>
+                  <data line="0" column="1" realPart="287.0"/>
+                  <data line="0" column="2" realPart="1004.0"/>
+                </ScilabDouble>
                 <ScilabInteger as="integerParameters" height="1" width="1" intPrecision="sci_int32">
                   <data line="0" column="0" value="0"/>
                 </ScilabInteger>
                 <Array as="objectsParameters" scilabClass="ScilabList">
                   <ScilabString height="30" width="1">
-                    <data line="0" column="0" value="Vol= 1.0"/>
-                    <data line="1" column="0" value="R= 287.0"/>
-                    <data line="2" column="0" value="Cp= 1.004*1000"/>
+                    <data line="0" column="0" value="Vol= rpar(1)"/>
+                    <data line="1" column="0" value="R= rpar(2)"/>
+                    <data line="2" column="0" value="Cp= rpar(3)"/>
                     <data line="3" column="0" value=""/>
                     <data line="4" column="0" value="//--------------------"/>
                     <data line="5" column="0" value="sum_m_flow= u1"/>
@@ -1749,7 +1770,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="190.0" y="520.0" width="100.0" height="80.0"/>
+                <mxGeometry as="geometry" x="420.0" y="140.0" width="100.0" height="80.0"/>
               </BasicBlock>
               <ExplicitInputPort id="b70e779:1870e817cca:-7f53" parent="b70e779:1870e817cca:-7f54" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitInputPort id="b70e779:1870e817cca:-7f4f" parent="b70e779:1870e817cca:-7f54" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1778,7 +1799,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="380.0" y="530.0" width="40.0" height="20.0"/>
+                <mxGeometry as="geometry" x="610.0" y="150.0" width="40.0" height="20.0"/>
               </BasicBlock>
               <ExplicitInputPort id="b70e779:1870e817cca:-7f46" parent="b70e779:1870e817cca:-7f47" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitOutputPort id="b70e779:1870e817cca:-7f45" parent="b70e779:1870e817cca:-7f47" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1801,7 +1822,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="380.0" y="560.0" width="40.0" height="20.0"/>
+                <mxGeometry as="geometry" x="610.0" y="180.0" width="40.0" height="20.0"/>
               </BasicBlock>
               <ExplicitInputPort id="b70e779:1870e817cca:-7f43" parent="b70e779:1870e817cca:-7f44" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitOutputPort id="b70e779:1870e817cca:-7f42" parent="b70e779:1870e817cca:-7f44" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1829,7 +1850,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="40.0" y="530.0" width="60.0" height="20.0"/>
+                <mxGeometry as="geometry" x="270.0" y="150.0" width="60.0" height="20.0"/>
               </BasicBlock>
               <ExplicitInputPort id="-39108d85:1873bd5feeb:-7ef3" parent="-39108d85:1873bd5feeb:-7ef4" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitOutputPort id="-39108d85:1873bd5feeb:-7ef2" parent="-39108d85:1873bd5feeb:-7ef4" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1857,7 +1878,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="40.0" y="560.0" width="60.0" height="20.0"/>
+                <mxGeometry as="geometry" x="270.0" y="180.0" width="60.0" height="20.0"/>
               </BasicBlock>
               <ExplicitInputPort id="-39108d85:1873bd5feeb:-7ef0" parent="-39108d85:1873bd5feeb:-7ef1" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitOutputPort id="-39108d85:1873bd5feeb:-7eef" parent="-39108d85:1873bd5feeb:-7ef1" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1876,7 +1897,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="-43.5" y="536.5" width="7.0" height="7.0"/>
+                <mxGeometry as="geometry" x="186.5" y="156.5" width="7.0" height="7.0"/>
               </SplitBlock>
               <ExplicitInputPort id="3c13f5ab:187516a7613:-7f2d" parent="3c13f5ab:187516a7613:-7f2e" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitOutputPort id="3c13f5ab:187516a7613:-7f2c" parent="3c13f5ab:187516a7613:-7f2e" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1897,7 +1918,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="446.5" y="536.5" width="7.0" height="7.0"/>
+                <mxGeometry as="geometry" x="676.5" y="156.5" width="7.0" height="7.0"/>
               </SplitBlock>
               <ExplicitInputPort id="3c13f5ab:187516a7613:-7f25" parent="3c13f5ab:187516a7613:-7f26" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitOutputPort id="3c13f5ab:187516a7613:-7f24" parent="3c13f5ab:187516a7613:-7f26" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1918,7 +1939,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="436.5" y="556.5" width="7.0" height="7.0"/>
+                <mxGeometry as="geometry" x="666.5" y="176.5" width="7.0" height="7.0"/>
               </SplitBlock>
               <ExplicitInputPort id="3c13f5ab:187516a7613:-7f1d" parent="3c13f5ab:187516a7613:-7f1e" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitOutputPort id="3c13f5ab:187516a7613:-7f1c" parent="3c13f5ab:187516a7613:-7f1e" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
@@ -1943,7 +1964,7 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="590.0" y="610.0" width="20.0" height="20.0"/>
+                <mxGeometry as="geometry" x="820.0" y="230.0" width="20.0" height="20.0"/>
               </ExplicitOutBlock>
               <ExplicitInputPort id="3c13f5ab:187516a7613:-7f10" parent="3c13f5ab:187516a7613:-7f11" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <BasicBlock id="3c13f5ab:187516a7613:-7f0e" parent="6191a88d:18741966c85:-7f8c" interfaceFunctionName="MATCATV" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="mat_catv" simulationFunctionType="C_OR_FORTRAN" style="MATCATV">
@@ -1963,139 +1984,139 @@
                 <ScilabDouble as="dState" height="0" width="0"/>
                 <Array as="oDState" scilabClass="ScilabList"/>
                 <Array as="equations" scilabClass="ScilabList"/>
-                <mxGeometry as="geometry" x="510.0" y="600.0" width="30.0" height="40.0"/>
+                <mxGeometry as="geometry" x="740.0" y="220.0" width="30.0" height="40.0"/>
               </BasicBlock>
               <ExplicitInputPort id="3c13f5ab:187516a7613:-7f0d" parent="3c13f5ab:187516a7613:-7f0e" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitInputPort id="3c13f5ab:187516a7613:-7f0c" parent="3c13f5ab:187516a7613:-7f0e" ordering="2" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitOutputPort id="3c13f5ab:187516a7613:-7f0b" parent="3c13f5ab:187516a7613:-7f0e" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitLink id="6191a88d:18741966c83:-7f82" parent="6191a88d:18741966c85:-7f8c" source="-39108d85:1873bd5feeb:-7eda" target="6191a88d:18741966c83:-7f84" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="34.0" y="20.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="-39108d85:1873bd5feeb:-7ee5" parent="6191a88d:18741966c85:-7f8c" source="-39108d85:1873bd5feeb:-7ef2" target="b70e779:1870e817cca:-7f53" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="64.0" y="10.0"/>
                   <Array as="points">
-                    <mxPoint x="130.0" y="540.0"/>
-                    <mxPoint x="130.0" y="540.0"/>
+                    <mxPoint x="360.0" y="160.0"/>
+                    <mxPoint x="360.0" y="160.0"/>
                   </Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="20.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="-39108d85:1873bd5feeb:-7ee4" parent="6191a88d:18741966c85:-7f8c" source="-39108d85:1873bd5feeb:-7eef" target="b70e779:1870e817cca:-7f4f" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="64.0" y="10.0"/>
                   <Array as="points">
-                    <mxPoint x="120.0" y="570.0"/>
-                    <mxPoint x="120.0" y="550.0"/>
+                    <mxPoint x="350.0" y="190.0"/>
+                    <mxPoint x="350.0" y="170.0"/>
                   </Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="30.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f33" parent="6191a88d:18741966c85:-7f8c" source="b70e779:1870e817cca:-7f52" target="b70e779:1870e817cca:-7f46" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="104.0" y="20.0"/>
                   <Array as="points">
-                    <mxPoint x="320.0" y="540.0"/>
-                    <mxPoint x="330.0" y="540.0"/>
-                    <mxPoint x="350.0" y="540.0"/>
+                    <mxPoint x="550.0" y="160.0"/>
+                    <mxPoint x="560.0" y="160.0"/>
+                    <mxPoint x="580.0" y="160.0"/>
                   </Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f31" parent="6191a88d:18741966c85:-7f8c" source="b70e779:1870e817cca:-7f4c" target="b70e779:1870e817cca:-7f43" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="104.0" y="30.0"/>
                   <Array as="points">
-                    <mxPoint x="300.0" y="550.0"/>
-                    <mxPoint x="310.0" y="550.0"/>
-                    <mxPoint x="330.0" y="550.0"/>
-                    <mxPoint x="340.0" y="550.0"/>
-                    <mxPoint x="360.0" y="550.0"/>
-                    <mxPoint x="360.0" y="560.0"/>
-                    <mxPoint x="360.0" y="570.0"/>
+                    <mxPoint x="530.0" y="170.0"/>
+                    <mxPoint x="540.0" y="170.0"/>
+                    <mxPoint x="560.0" y="170.0"/>
+                    <mxPoint x="570.0" y="170.0"/>
+                    <mxPoint x="590.0" y="170.0"/>
+                    <mxPoint x="590.0" y="180.0"/>
+                    <mxPoint x="590.0" y="190.0"/>
                   </Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f29" parent="6191a88d:18741966c85:-7f8c" source="6191a88d:18741966c83:-7f88" target="3c13f5ab:187516a7613:-7f2d" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="24.0" y="10.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="0.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f28" parent="6191a88d:18741966c85:-7f8c" source="3c13f5ab:187516a7613:-7f2c" target="-39108d85:1873bd5feeb:-7ef3" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="11.0" y="0.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f2f" parent="6191a88d:18741966c85:-7f8c" source="3c13f5ab:187516a7613:-7f2b" target="-39108d85:1873bd5feeb:-7ef0" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="11.0" y="0.0"/>
                   <Array as="points">
-                    <mxPoint x="-40.0" y="570.0"/>
+                    <mxPoint x="190.0" y="190.0"/>
                   </Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f21" parent="6191a88d:18741966c85:-7f8c" source="b70e779:1870e817cca:-7f45" target="3c13f5ab:187516a7613:-7f25" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="44.0" y="10.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="0.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f20" parent="6191a88d:18741966c85:-7f8c" source="3c13f5ab:187516a7613:-7f24" target="b70e779:1870e817cca:-7f4e" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="11.0" y="0.0"/>
                   <Array as="points">
-                    <mxPoint x="450.0" y="520.0"/>
-                    <mxPoint x="450.0" y="470.0"/>
-                    <mxPoint x="170.0" y="470.0"/>
-                    <mxPoint x="170.0" y="570.0"/>
+                    <mxPoint x="680.0" y="140.0"/>
+                    <mxPoint x="680.0" y="90.0"/>
+                    <mxPoint x="400.0" y="90.0"/>
+                    <mxPoint x="400.0" y="190.0"/>
                   </Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="50.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f27" parent="6191a88d:18741966c85:-7f8c" source="3c13f5ab:187516a7613:-7f23" target="-39108d85:1873bd5feeb:-7edc" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="11.0" y="0.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f19" parent="6191a88d:18741966c85:-7f8c" source="b70e779:1870e817cca:-7f42" target="3c13f5ab:187516a7613:-7f1d" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="44.0" y="10.0"/>
                   <Array as="points">
-                    <mxPoint x="440.0" y="570.0"/>
-                    <mxPoint x="440.0" y="570.0"/>
+                    <mxPoint x="670.0" y="190.0"/>
+                    <mxPoint x="670.0" y="190.0"/>
                   </Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="0.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f18" parent="6191a88d:18741966c85:-7f8c" source="3c13f5ab:187516a7613:-7f1c" target="b70e779:1870e817cca:-7f4d" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="11.0" y="0.0"/>
                   <Array as="points">
-                    <mxPoint x="440.0" y="480.0"/>
-                    <mxPoint x="160.0" y="480.0"/>
-                    <mxPoint x="160.0" y="580.0"/>
+                    <mxPoint x="670.0" y="100.0"/>
+                    <mxPoint x="390.0" y="100.0"/>
+                    <mxPoint x="390.0" y="200.0"/>
                   </Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="60.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f1f" parent="6191a88d:18741966c85:-7f8c" source="3c13f5ab:187516a7613:-7f1b" target="-39108d85:1873bd5feeb:-7edb" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
+                  <mxPoint as="sourcePoint" x="11.0" y="0.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
+                  <mxPoint as="targetPoint" x="-4.0" y="30.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="3c13f5ab:187516a7613:-7f0a" parent="6191a88d:18741966c85:-7f8c" source="3c13f5ab:187516a7613:-7f0b" target="3c13f5ab:187516a7613:-7f10" style="ExplicitLink" value="">
@@ -2109,9 +2130,9 @@
                 <mxGeometry as="geometry">
                   <mxPoint as="sourcePoint" x="104.0" y="50.0"/>
                   <Array as="points">
-                    <mxPoint x="340.0" y="570.0"/>
-                    <mxPoint x="340.0" y="570.0"/>
-                    <mxPoint x="340.0" y="610.0"/>
+                    <mxPoint x="570.0" y="190.0"/>
+                    <mxPoint x="570.0" y="190.0"/>
+                    <mxPoint x="570.0" y="230.0"/>
                   </Array>
                   <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
                 </mxGeometry>
@@ -2120,9 +2141,9 @@
                 <mxGeometry as="geometry">
                   <mxPoint as="sourcePoint" x="104.0" y="60.0"/>
                   <Array as="points">
-                    <mxPoint x="320.0" y="580.0"/>
-                    <mxPoint x="320.0" y="580.0"/>
-                    <mxPoint x="320.0" y="630.0"/>
+                    <mxPoint x="550.0" y="200.0"/>
+                    <mxPoint x="550.0" y="200.0"/>
+                    <mxPoint x="550.0" y="250.0"/>
                   </Array>
                   <mxPoint as="targetPoint" x="-4.0" y="30.0"/>
                 </mxGeometry>
@@ -2155,7 +2176,12 @@
           <mxGeometry as="geometry" x="40.0" y="44.0" width="0.0" height="0.0"/>
         </mxCell>
         <SuperBlockDiagram as="child" background="-1" gridEnabled="1" title="">
-          <Array as="context" scilabClass="String[]"></Array>
+          <Array as="context" scilabClass="String[]">
+            <add value="Area_par= 0.001"/>
+            <add value="k_par= 1.0"/>
+            <add value="R_par= 287.0"/>
+            <add value="Cp_par= 1.004*1000"/>
+          </Array>
           <mxGraphModel as="model">
             <root>
               <mxCell id="3c13f5ab:187516a7614:-7f90"/>
@@ -2169,18 +2195,18 @@
                     <data line="3" column="0" value="[]"/>
                     <data line="4" column="0" value="[]"/>
                     <data line="5" column="0" value="[]"/>
-                    <data line="6" column="0" value="[0.01, 0.5]"/>
+                    <data line="6" column="0" value="[Area_par, k_par, R_par, Cp_par]"/>
                     <data line="7" column="0" value="[]"/>
                     <data line="8" column="0" value="0"/>
                   </ScilabString>
                   <Array scilabClass="ScilabList">
                     <ScilabString height="38" width="1">
                       <data line="0" column="0" value="// generic dp"/>
-                      <data line="1" column="0" value="A= 0.001"/>
-                      <data line="2" column="0" value="k= 1.0"/>
+                      <data line="1" column="0" value="A= rpar(1)"/>
+                      <data line="2" column="0" value="k= rpar(2)"/>
                       <data line="3" column="0" value="//--------------------"/>
-                      <data line="4" column="0" value="R= 287.0"/>
-                      <data line="5" column="0" value="Cp= 1.004*1000"/>
+                      <data line="4" column="0" value="R= rpar(3)"/>
+                      <data line="5" column="0" value="Cp= rpar(4)"/>
                       <data line="6" column="0" value=""/>
                       <data line="7" column="0" value="//--------------------"/>
                       <data line="8" column="0" value="p1= u1(1,1)"/>
@@ -2238,9 +2264,11 @@
                     </ScilabString>
                   </Array>
                 </Array>
-                <ScilabDouble as="realParameters" height="1" width="2">
-                  <data line="0" column="0" realPart="0.01"/>
-                  <data line="0" column="1" realPart="0.5"/>
+                <ScilabDouble as="realParameters" height="1" width="4">
+                  <data line="0" column="0" realPart="0.001"/>
+                  <data line="0" column="1" realPart="1.0"/>
+                  <data line="0" column="2" realPart="287.0"/>
+                  <data line="0" column="3" realPart="1004.0"/>
                 </ScilabDouble>
                 <ScilabInteger as="integerParameters" height="1" width="1" intPrecision="sci_int32">
                   <data line="0" column="0" value="0"/>
@@ -2248,11 +2276,11 @@
                 <Array as="objectsParameters" scilabClass="ScilabList">
                   <ScilabString height="38" width="1">
                     <data line="0" column="0" value="// generic dp"/>
-                    <data line="1" column="0" value="A= 0.001"/>
-                    <data line="2" column="0" value="k= 1.0"/>
+                    <data line="1" column="0" value="A= rpar(1)"/>
+                    <data line="2" column="0" value="k= rpar(2)"/>
                     <data line="3" column="0" value="//--------------------"/>
-                    <data line="4" column="0" value="R= 287.0"/>
-                    <data line="5" column="0" value="Cp= 1.004*1000"/>
+                    <data line="4" column="0" value="R= rpar(3)"/>
+                    <data line="5" column="0" value="Cp= rpar(4)"/>
                     <data line="6" column="0" value=""/>
                     <data line="7" column="0" value="//--------------------"/>
                     <data line="8" column="0" value="p1= u1(1,1)"/>
@@ -2509,7 +2537,12 @@
           <mxGeometry as="geometry" x="40.0" y="44.0" width="0.0" height="0.0"/>
         </mxCell>
         <SuperBlockDiagram as="child" background="-1" gridEnabled="1" title="">
-          <Array as="context" scilabClass="String[]"></Array>
+          <Array as="context" scilabClass="String[]">
+            <add value="Area_par= 0.002"/>
+            <add value="k_par= 1.0"/>
+            <add value="R_par= 287"/>
+            <add value="Cp_par= 1.004*1000"/>
+          </Array>
           <mxGraphModel as="model">
             <root>
               <mxCell id="-77fe4e01:18751858da3:-7fec"/>
@@ -2772,30 +2805,30 @@
               <ExplicitInputPort id="-77fe4e01:18751858da2:-7fdc" parent="-77fe4e01:18751858da2:-7fdd" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
               <ExplicitLink id="-77fe4e01:18751858da2:-7fcf" parent="-77fe4e01:18751858da4:-7fec" source="-77fe4e01:18751858da2:-7fe8" target="-39108d85:1873bd5feeb:-7f10" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="24.0" y="10.0"/>
+                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="-4.0" y="20.0"/>
+                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="-77fe4e01:18751858da2:-7fce" parent="-77fe4e01:18751858da4:-7fec" source="-77fe4e01:18751858da2:-7fe0" target="-39108d85:1873bd5feeb:-7f0f" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="24.0" y="10.0"/>
+                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="-4.0" y="40.0"/>
+                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="-77fe4e01:18751858da2:-7fcb" parent="-77fe4e01:18751858da4:-7fec" source="-39108d85:1873bd5feeb:-7f0e" target="-77fe4e01:18751858da2:-7fe4" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="74.0" y="20.0"/>
+                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
+                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
                 </mxGeometry>
               </ExplicitLink>
               <ExplicitLink id="-77fe4e01:18751858da2:-7fca" parent="-77fe4e01:18751858da4:-7fec" source="-39108d85:1873bd5feeb:-7f0d" target="-77fe4e01:18751858da2:-7fdc" style="ExplicitLink" value="">
                 <mxGeometry as="geometry">
-                  <mxPoint as="sourcePoint" x="74.0" y="40.0"/>
+                  <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
                   <Array as="points"></Array>
-                  <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
+                  <mxPoint as="targetPoint" x="0.0" y="0.0"/>
                 </mxGeometry>
               </ExplicitLink>
             </root>
@@ -3095,6 +3128,26 @@
       <ExplicitOutputPort id="-77fe4e01:18751858da2:-7ee6" parent="-77fe4e01:18751858da2:-7ee8" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0" value=""/>
       <ExplicitOutputPort id="-77fe4e01:18751858da2:-7ee5" parent="-77fe4e01:18751858da2:-7ee8" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0" value=""/>
       <ExplicitOutputPort id="-77fe4e01:18751858da2:-7ee4" parent="-77fe4e01:18751858da2:-7ee8" ordering="3" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0" value=""/>
+      <SplitBlock id="-77fe4e01:18751858da2:-7eb6" parent="0:2:0" interfaceFunctionName="CLKSPLIT_f" blockType="d" dependsOnU="0" dependsOnT="0" simulationFunctionName="split" simulationFunctionType="DEFAULT" style="CLKSPLIT_f">
+        <ScilabDouble as="exprs" height="0" width="0"/>
+        <ScilabDouble as="realParameters" height="0" width="0"/>
+        <ScilabDouble as="integerParameters" height="0" width="0"/>
+        <Array as="objectsParameters" scilabClass="ScilabList"/>
+        <ScilabInteger as="nbZerosCrossing" height="1" width="1" intPrecision="sci_int32">
+          <data line="0" column="0" value="0"/>
+        </ScilabInteger>
+        <ScilabInteger as="nmode" height="1" width="1" intPrecision="sci_int32">
+          <data line="0" column="0" value="0"/>
+        </ScilabInteger>
+        <ScilabDouble as="state" height="0" width="0"/>
+        <ScilabDouble as="dState" height="0" width="0"/>
+        <Array as="oDState" scilabClass="ScilabList"/>
+        <Array as="equations" scilabClass="ScilabList"/>
+        <mxGeometry as="geometry" x="416.5" y="596.5" width="7.0" height="7.0"/>
+      </SplitBlock>
+      <ControlPort id="-77fe4e01:18751858da2:-7eb5" parent="-77fe4e01:18751858da2:-7eb6" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ControlPort;align=center;verticalAlign=top;spacing=10.0" value=""/>
+      <CommandPort id="-77fe4e01:18751858da2:-7eb4" parent="-77fe4e01:18751858da2:-7eb6" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="-1.0" style="CommandPort;align=center;verticalAlign=bottom;spacing=10.0" value=""/>
+      <CommandPort id="-77fe4e01:18751858da2:-7eb3" parent="-77fe4e01:18751858da2:-7eb6" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="-1.0" style="CommandPort;align=center;verticalAlign=bottom;spacing=10.0" value=""/>
       <ExplicitLink id="-39108d85:1873bd5feeb:-7ec5" parent="0:2:0" source="b70e779:1870e817cca:-7fe1" target="-39108d85:1873bd5feeb:-7ec9" style="ExplicitLink" value="">
         <mxGeometry as="geometry">
           <mxPoint as="sourcePoint" x="0.0" y="0.0"/>
@@ -3298,13 +3351,6 @@
           <mxPoint as="targetPoint" x="80.0" y="-4.0"/>
         </mxGeometry>
       </CommandControlLink>
-      <CommandControlLink id="-77fe4e01:18751858da2:-7f15" parent="0:2:0" source="-77fe4e01:18751858da2:-7f16" target="192bc7ba:18719123bd4:-7f9c" style="CommandControlLink" value="">
-        <mxGeometry as="geometry">
-          <mxPoint as="sourcePoint" x="20.0" y="24.0"/>
-          <Array as="points"></Array>
-          <mxPoint as="targetPoint" x="20.0" y="-4.0"/>
-        </mxGeometry>
-      </CommandControlLink>
       <CommandControlLink id="-77fe4e01:18751858da2:-7f04" parent="0:2:0" source="-77fe4e01:18751858da2:-7f12" target="-77fe4e01:18751858da2:-7f07" style="CommandControlLink" value="">
         <mxGeometry as="geometry">
           <mxPoint as="sourcePoint" x="20.0" y="24.0"/>
@@ -3426,6 +3472,29 @@
           <mxPoint as="targetPoint" x="-4.0" y="10.0"/>
         </mxGeometry>
       </ExplicitLink>
+      <CommandControlLink id="-77fe4e01:18751858da2:-7eb2" parent="0:2:0" source="-77fe4e01:18751858da2:-7f16" target="-77fe4e01:18751858da2:-7eb5" style="CommandControlLink" value="">
+        <mxGeometry as="geometry">
+          <mxPoint as="sourcePoint" x="20.0" y="24.0"/>
+          <Array as="points"></Array>
+          <mxPoint as="targetPoint" x="4.0" y="4.0"/>
+        </mxGeometry>
+      </CommandControlLink>
+      <CommandControlLink id="-77fe4e01:18751858da2:-7eb1" parent="0:2:0" source="-77fe4e01:18751858da2:-7eb4" target="192bc7ba:18719123bd4:-7f9c" style="CommandControlLink" value="">
+        <mxGeometry as="geometry">
+          <mxPoint as="sourcePoint" x="4.0" y="4.0"/>
+          <Array as="points"></Array>
+          <mxPoint as="targetPoint" x="20.0" y="-4.0"/>
+        </mxGeometry>
+      </CommandControlLink>
+      <CommandControlLink id="-77fe4e01:18751858da2:-7eb7" parent="0:2:0" source="-77fe4e01:18751858da2:-7eb3" target="192bc7ba:18719123bd4:-7f98" style="CommandControlLink" value="">
+        <mxGeometry as="geometry">
+          <mxPoint as="sourcePoint" x="20.0" y="-4.0"/>
+          <Array as="points">
+            <mxPoint x="450.0" y="600.0"/>
+          </Array>
+          <mxPoint as="targetPoint" x="10.0" y="0.0"/>
+        </mxGeometry>
+      </CommandControlLink>
     </root>
   </mxGraphModel>
   <mxCell as="defaultParent" id="0:2:0" parent="0:1:0"/>
