@@ -2157,9 +2157,22 @@
       <ExplicitOutputPort id="6191a88d:18741966c83:-7f83" parent="6191a88d:18741966c83:-7f8c" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ExplicitOutputPort id="3c13f5ab:187516a7613:-7f0f" parent="6191a88d:18741966c83:-7f8c" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <SuperBlock id="3c13f5ab:187516a7613:-7f90" parent="0:2:0" interfaceFunctionName="SUPER_f" blockType="h" dependsOnU="0" dependsOnT="0" simulationFunctionName="super" simulationFunctionType="DEFAULT" style="SUPER_f;rotation=0">
-        <ScilabDouble as="exprs" height="0" width="0"/>
+        <Array as="exprs" scilabClass="ScilabList">
+          <ScilabDouble height="0" width="0"/>
+          <Array scilabClass="ScilabList">
+            <ScilabDouble height="0" width="0"/>
+            <ScilabString height="1" width="1">
+              <data line="0" column="0" value="ブロック・パラメータ設定"/>
+            </ScilabString>
+            <Array scilabClass="ScilabList">
+              <ScilabDouble height="0" width="0"/>
+            </Array>
+          </Array>
+        </Array>
         <ScilabDouble as="realParameters" height="0" width="0"/>
-        <ScilabDouble as="integerParameters" height="0" width="0"/>
+        <ScilabInteger as="integerParameters" height="1" width="1" intPrecision="sci_int32">
+          <data line="0" column="0" value="1"/>
+        </ScilabInteger>
         <Array as="objectsParameters" scilabClass="ScilabList"/>
         <ScilabInteger as="nbZerosCrossing" height="1" width="1" intPrecision="sci_int32">
           <data line="0" column="0" value="0"/>
