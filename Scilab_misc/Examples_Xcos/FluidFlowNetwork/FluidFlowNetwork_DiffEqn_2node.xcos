@@ -1,7 +1,7 @@
 <?xml version="1.0" ?>
-<XcosDiagram debugLevel="0" finalIntegrationTime="300.0" integratorAbsoluteTolerance="1.0E-6" integratorRelativeTolerance="1.0E-6" toleranceOnTime="1.0E-10" maxIntegrationTimeInterval="100001.0" maximumStepSize="0.0" realTimeScaling="0.0" solver="1.0" background="-1" gridEnabled="1" title="FluidFlowNetwork_DiffEqn_2node"><!--Xcos - 2.0 - scilab-6.1.1 - 20210715 1531-->
+<XcosDiagram debugLevel="0" finalIntegrationTime="500.0" integratorAbsoluteTolerance="1.0E-6" integratorRelativeTolerance="1.0E-6" toleranceOnTime="1.0E-10" maxIntegrationTimeInterval="100001.0" maximumStepSize="0.0" realTimeScaling="0.0" solver="1.0" background="-1" gridEnabled="1" title="FluidFlowNetwork_DiffEqn_2node"><!--Xcos - 2.0 - scilab-6.1.1 - 20210715 1531-->
   <Array as="context" scilabClass="String[]">
-    <add value="RefreshPlot_par=300"/>
+    <add value="RefreshPlot_par=500"/>
     <add value=""/>
     <add value="p=100*1000"/>
     <add value="T= 288.15+100"/>
@@ -16,7 +16,7 @@
     <root>
       <mxCell id="0:1:0"/>
       <mxCell id="0:2:0" parent="0:1:0"/>
-      <AfficheBlock id="b70e779:1870e817cca:-7f3d" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  127986.1339 ">
+      <AfficheBlock id="b70e779:1870e817cca:-7f3d" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  130684.1733 ">
         <ScilabString as="exprs" height="7" width="1">
           <data line="0" column="0" value="[1,1]"/>
           <data line="1" column="0" value="1"/>
@@ -58,7 +58,7 @@
       </AfficheBlock>
       <ExplicitInputPort id="b70e779:1870e817cca:-7f3c" parent="b70e779:1870e817cca:-7f3d" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ControlPort id="b70e779:1870e817cca:-7f3b" parent="b70e779:1870e817cca:-7f3d" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ControlPort;align=center;verticalAlign=top;spacing=10.0;rotation=90" value=""/>
-      <AfficheBlock id="b70e779:1870e817cca:-7f3a" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  114749.1055 ">
+      <AfficheBlock id="b70e779:1870e817cca:-7f3a" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  116232.1523 ">
         <ScilabString as="exprs" height="7" width="1">
           <data line="0" column="0" value="[1,1]"/>
           <data line="1" column="0" value="1"/>
@@ -4625,7 +4625,7 @@
       <ExplicitOutputPort id="-77fe4e01:18751858da2:-7d6d" parent="-77fe4e01:18751858da2:-7d6f" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ExplicitOutputPort id="-77fe4e01:18751858da2:-7d6c" parent="-77fe4e01:18751858da2:-7d6f" ordering="2" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ExplicitOutputPort id="-77fe4e01:18751858da2:-7d6b" parent="-77fe4e01:18751858da2:-7d6f" ordering="3" dataType="REAL_MATRIX" dataColumns="1" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
-      <AfficheBlock id="a3cd177:18751cfae17:-7ff3" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  328.4502 ">
+      <AfficheBlock id="a3cd177:18751cfae17:-7ff3" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  337.4686 ">
         <ScilabString as="exprs" height="7" width="1">
           <data line="0" column="0" value="[1,1]"/>
           <data line="1" column="0" value="1"/>
@@ -4667,7 +4667,7 @@
       </AfficheBlock>
       <ExplicitInputPort id="a3cd177:18751cfae17:-7ff2" parent="a3cd177:18751cfae17:-7ff3" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ControlPort id="a3cd177:18751cfae17:-7ff1" parent="a3cd177:18751cfae17:-7ff3" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ControlPort;align=center;verticalAlign=top;spacing=10.0;rotation=90" value=""/>
-      <AfficheBlock id="a3cd177:18751cfae17:-7ff0" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  330.0230 ">
+      <AfficheBlock id="a3cd177:18751cfae17:-7ff0" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  339.0742 ">
         <ScilabString as="exprs" height="7" width="1">
           <data line="0" column="0" value="[1,1]"/>
           <data line="1" column="0" value="1"/>
@@ -4801,7 +4801,7 @@
         <mxGeometry as="geometry" x="990.0" y="700.0" width="60.0" height="20.0"/>
       </BasicBlock>
       <ExplicitOutputPort id="a3cd177:18751cfae17:-7fe4" parent="a3cd177:18751cfae17:-7fe5" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
-      <AfficheBlock id="a3cd177:18751cfae17:-7fd2" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  0.0861 ">
+      <AfficheBlock id="a3cd177:18751cfae17:-7fd2" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  0.0903 ">
         <ScilabString as="exprs" height="7" width="1">
           <data line="0" column="0" value="[1,1]"/>
           <data line="1" column="0" value="1"/>
@@ -4843,7 +4843,7 @@
       </AfficheBlock>
       <ExplicitInputPort id="a3cd177:18751cfae17:-7fd1" parent="a3cd177:18751cfae17:-7fd2" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ControlPort id="a3cd177:18751cfae17:-7fd0" parent="a3cd177:18751cfae17:-7fd2" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ControlPort;align=center;verticalAlign=top;spacing=10.0;rotation=90" value=""/>
-      <AfficheBlock id="a3cd177:18751cfae17:-7fcf" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  0.0005 ">
+      <AfficheBlock id="a3cd177:18751cfae17:-7fcf" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  0.0006 ">
         <ScilabString as="exprs" height="7" width="1">
           <data line="0" column="0" value="[1,1]"/>
           <data line="1" column="0" value="1"/>
@@ -4977,7 +4977,7 @@
         <mxGeometry as="geometry" x="590.0" y="850.0" width="60.0" height="20.0"/>
       </BasicBlock>
       <ExplicitOutputPort id="a3cd177:18751cfae17:-7fc3" parent="a3cd177:18751cfae17:-7fc4" ordering="1" dataType="REAL_MATRIX" dataColumns="-2" dataLines="-1" initialState="0.0" style="ExplicitOutputPort;align=right;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
-      <AfficheBlock id="a3cd177:18751cfae17:-7fbd" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  28386.5688 ">
+      <AfficheBlock id="a3cd177:18751cfae17:-7fbd" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  30586.0094 ">
         <ScilabString as="exprs" height="7" width="1">
           <data line="0" column="0" value="[1,1]"/>
           <data line="1" column="0" value="1"/>
@@ -5019,7 +5019,7 @@
       </AfficheBlock>
       <ExplicitInputPort id="a3cd177:18751cfae17:-7fbc" parent="a3cd177:18751cfae17:-7fbd" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ExplicitInputPort;align=left;verticalAlign=middle;spacing=10.0;rotation=0" value=""/>
       <ControlPort id="a3cd177:18751cfae17:-7fbb" parent="a3cd177:18751cfae17:-7fbd" ordering="1" dataType="REAL_MATRIX" dataColumns="1" dataLines="1" initialState="0.0" style="ControlPort;align=center;verticalAlign=top;spacing=10.0;rotation=90" value=""/>
-      <AfficheBlock id="a3cd177:18751cfae17:-7fba" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  -117.8794 ">
+      <AfficheBlock id="a3cd177:18751cfae17:-7fba" parent="0:2:0" interfaceFunctionName="AFFICH_m" blockType="c" dependsOnU="1" dependsOnT="0" simulationFunctionName="affich2" simulationFunctionType="C_OR_FORTRAN" style="AFFICH_m;fontFamily=Dialog;fontSize=13;fontColor=#ff0000ff" value="  -124.3064 ">
         <ScilabString as="exprs" height="7" width="1">
           <data line="0" column="0" value="[1,1]"/>
           <data line="1" column="0" value="1"/>

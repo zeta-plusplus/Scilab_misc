@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mo fence="true" form="prefix" stretchy="true">[</mo>
+       <mrow>
+        <mtable>
+         <mtr>
+          <mtd>
+           <mfrac>
+            <mi>V</mi>
+            <mi mathvariant="italic">RT</mi>
+           </mfrac>
+          </mtd>
+          <mtd>
+           <mfrac>
+            <mrow>
+             <mo stretchy="false">−</mo>
+             <mi mathvariant="italic">Vp</mi>
+            </mrow>
+            <mrow>
+             <mi>R</mi>
+             <msup>
+              <mi>T</mi>
+              <mn>2</mn>
+             </msup>
+            </mrow>
+           </mfrac>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mfrac>
+            <mrow>
+             <mi>V</mi>
+             <mrow>
+              <mo fence="true" form="prefix" stretchy="false">(</mo>
+              <mrow>
+               <mrow>
+                <mi mathvariant="italic">Cp</mi>
+                <mo stretchy="false">−</mo>
+                <mi>R</mi>
+               </mrow>
+              </mrow>
+              <mo fence="true" form="postfix" stretchy="false">)</mo>
+             </mrow>
+            </mrow>
+            <mi>R</mi>
+           </mfrac>
+          </mtd>
+          <mtd>
+           <mrow>
+            <mrow>
+             <mo fence="true" form="prefix" stretchy="false">(</mo>
+             <mrow>
+              <mrow>
+               <mi mathvariant="italic">Cp</mi>
+               <mo stretchy="false">−</mo>
+               <mi>R</mi>
+              </mrow>
+             </mrow>
+             <mo fence="true" form="postfix" stretchy="false">)</mo>
+            </mrow>
+            <mrow>
+             <mo fence="true" form="prefix" stretchy="false">[</mo>
+             <mrow>
+              <mrow>
+               <mfrac>
+                <mrow>
+                 <mo stretchy="false">−</mo>
+                 <mi mathvariant="italic">Vp</mi>
+                </mrow>
+                <mi mathvariant="italic">RT</mi>
+               </mfrac>
+               <mo stretchy="false">+</mo>
+               <mi>m</mi>
+              </mrow>
+             </mrow>
+             <mo fence="true" form="postfix" stretchy="false">]</mo>
+            </mrow>
+           </mrow>
+          </mtd>
+         </mtr>
+        </mtable>
+       </mrow>
+       <mo fence="true" form="postfix" stretchy="true">]</mo>
+      </mrow>
+      <mrow>
+       <mrow>
+        <mo fence="true" form="prefix" stretchy="true">[</mo>
+        <mrow>
+         <mtable>
+          <mtr>
+           <mtd>
+            <mover accent="true">
+             <mi>p</mi>
+             <mo stretchy="false">˙</mo>
+            </mover>
+           </mtd>
+          </mtr>
+          <mtr>
+           <mtd>
+            <mover accent="true">
+             <mi>T</mi>
+             <mo stretchy="false">˙</mo>
+            </mover>
+           </mtd>
+          </mtr>
+         </mtable>
+        </mrow>
+        <mo fence="true" form="postfix" stretchy="true">]</mo>
+       </mrow>
+       <mo stretchy="false">=</mo>
+       <mrow>
+        <mo fence="true" form="prefix" stretchy="true">[</mo>
+        <mrow>
+         <mtable>
+          <mtr>
+           <mtd>
+            <mrow>
+             <mo stretchy="false">∑</mo>
+             <mrow>
+              <mo fence="true" form="prefix" stretchy="false">(</mo>
+              <mrow>
+               <msub>
+                <mi>m</mi>
+                <mi mathvariant="italic">flow</mi>
+               </msub>
+              </mrow>
+              <mo fence="true" form="postfix" stretchy="false">)</mo>
+             </mrow>
+            </mrow>
+           </mtd>
+          </mtr>
+          <mtr>
+           <mtd>
+            <mrow>
+             <mo stretchy="false">∑</mo>
+             <mrow>
+              <mo fence="true" form="prefix" stretchy="false">(</mo>
+              <mrow>
+               <msub>
+                <mi mathvariant="italic">mh</mi>
+                <mi mathvariant="italic">flow</mi>
+               </msub>
+              </mrow>
+              <mo fence="true" form="postfix" stretchy="false">)</mo>
+             </mrow>
+            </mrow>
+           </mtd>
+          </mtr>
+         </mtable>
+        </mrow>
+        <mo fence="true" form="postfix" stretchy="true">]</mo>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mrow>
+        <mo fence="true" form="prefix" stretchy="true">[</mo>
+        <mrow>
+         <mtable>
+          <mtr>
+           <mtd>
+            <mover accent="true">
+             <mi>p</mi>
+             <mo stretchy="false">˙</mo>
+            </mover>
+           </mtd>
+          </mtr>
+          <mtr>
+           <mtd>
+            <mover accent="true">
+             <mi>T</mi>
+             <mo stretchy="false">˙</mo>
+            </mover>
+           </mtd>
+          </mtr>
+         </mtable>
+        </mrow>
+        <mo fence="true" form="postfix" stretchy="true">]</mo>
+       </mrow>
+       <mo stretchy="false">=</mo>
+       <msup>
+        <mrow>
+         <mo fence="true" form="prefix" stretchy="true">[</mo>
+         <mrow>
+          <mtable>
+           <mtr>
+            <mtd>
+             <mfrac>
+              <mi>V</mi>
+              <mi mathvariant="italic">RT</mi>
+             </mfrac>
+            </mtd>
+            <mtd>
+             <mfrac>
+              <mrow>
+               <mo stretchy="false">−</mo>
+               <mi mathvariant="italic">Vp</mi>
+              </mrow>
+              <mrow>
+               <mi>R</mi>
+               <msup>
+                <mi>T</mi>
+                <mn>2</mn>
+               </msup>
+              </mrow>
+             </mfrac>
+            </mtd>
+           </mtr>
+           <mtr>
+            <mtd>
+             <mfrac>
+              <mrow>
+               <mi>V</mi>
+               <mrow>
+                <mo fence="true" form="prefix" stretchy="false">(</mo>
+                <mrow>
+                 <mrow>
+                  <mi mathvariant="italic">Cp</mi>
+                  <mo stretchy="false">−</mo>
+                  <mi>R</mi>
+                 </mrow>
+                </mrow>
+                <mo fence="true" form="postfix" stretchy="false">)</mo>
+               </mrow>
+              </mrow>
+              <mi>R</mi>
+             </mfrac>
+            </mtd>
+            <mtd>
+             <mrow>
+              <mrow>
+               <mo fence="true" form="prefix" stretchy="false">(</mo>
+               <mrow>
+                <mrow>
+                 <mi mathvariant="italic">Cp</mi>
+                 <mo stretchy="false">−</mo>
+                 <mi>R</mi>
+                </mrow>
+               </mrow>
+               <mo fence="true" form="postfix" stretchy="false">)</mo>
+              </mrow>
+              <mrow>
+               <mo fence="true" form="prefix" stretchy="false">[</mo>
+               <mrow>
+                <mrow>
+                 <mfrac>
+                  <mrow>
+                   <mo stretchy="false">−</mo>
+                   <mi mathvariant="italic">Vp</mi>
+                  </mrow>
+                  <mi mathvariant="italic">RT</mi>
+                 </mfrac>
+                 <mo stretchy="false">+</mo>
+                 <mi>m</mi>
+                </mrow>
+               </mrow>
+               <mo fence="true" form="postfix" stretchy="false">]</mo>
+              </mrow>
+             </mrow>
+            </mtd>
+           </mtr>
+          </mtable>
+         </mrow>
+         <mo fence="true" form="postfix" stretchy="true">]</mo>
+        </mrow>
+        <mrow>
+         <mo stretchy="false">−</mo>
+         <mn>1</mn>
+        </mrow>
+       </msup>
+      </mrow>
+      <mrow>
+       <mo fence="true" form="prefix" stretchy="true">[</mo>
+       <mrow>
+        <mtable>
+         <mtr>
+          <mtd>
+           <mrow>
+            <mo stretchy="false">∑</mo>
+            <mrow>
+             <mo fence="true" form="prefix" stretchy="false">(</mo>
+             <mrow>
+              <msub>
+               <mi>m</mi>
+               <mi mathvariant="italic">flow</mi>
+              </msub>
+             </mrow>
+             <mo fence="true" form="postfix" stretchy="false">)</mo>
+            </mrow>
+           </mrow>
+          </mtd>
+         </mtr>
+         <mtr>
+          <mtd>
+           <mrow>
+            <mo stretchy="false">∑</mo>
+            <mrow>
+             <mo fence="true" form="prefix" stretchy="false">(</mo>
+             <mrow>
+              <msub>
+               <mi mathvariant="italic">mh</mi>
+               <mi mathvariant="italic">flow</mi>
+              </msub>
+             </mrow>
+             <mo fence="true" form="postfix" stretchy="false">)</mo>
+            </mrow>
+           </mrow>
+          </mtd>
+         </mtr>
+        </mtable>
+       </mrow>
+       <mo fence="true" form="postfix" stretchy="true">]</mo>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">left [ matrix{{V} over {RT} # -{Vp} over {R T^{2}} ## {V(Cp-R)} over {R} # (Cp-R)[-{Vp} over {RT} + m]} right ]  left [ binom {dot p}{dot T} right ] = left [ binom {sum (m_flow)}{sum (mh_flow)} right ]  newline
+left [ binom {dot p}{dot T} right ] = left [ matrix{{V} over {RT} # -{Vp} over {R T^{2}} ## {V(Cp-R)} over {R} # (Cp-R)[-{Vp} over {RT} + m]} right ]^{-1}      left [ binom {sum (m_flow)}{sum (mh_flow)} right ]  </annotation>
+ </semantics>
+</math>

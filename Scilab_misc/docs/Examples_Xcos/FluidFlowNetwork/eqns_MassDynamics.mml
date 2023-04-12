@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+ <semantics>
+  <mtable>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mfrac>
+       <mi mathvariant="italic">dm</mi>
+       <mi mathvariant="italic">dt</mi>
+      </mfrac>
+      <mo stretchy="false">=</mo>
+      <mrow>
+       <mo stretchy="false">∑</mo>
+       <mrow>
+        <mo fence="true" form="prefix" stretchy="false">(</mo>
+        <mrow>
+         <msub>
+          <mi>m</mi>
+          <mi mathvariant="italic">flow</mi>
+         </msub>
+        </mrow>
+        <mo fence="true" form="postfix" stretchy="false">)</mo>
+       </mrow>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mo stretchy="false">−</mo>
+       <mi>.</mi>
+      </mrow>
+      <mi mathvariant="italic">mass</mi>
+      <mi mathvariant="italic">flow</mi>
+      <mi mathvariant="italic">into</mi>
+      <mi mathvariant="italic">volume</mi>
+      <mi mathvariant="italic">is</mi>
+      <mi mathvariant="italic">positive</mi>
+      <mi mathvariant="italic">sign</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi>m</mi>
+      <mo stretchy="false">=</mo>
+      <mi mathvariant="italic">ρV</mi>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mfrac>
+       <mi mathvariant="italic">dm</mi>
+       <mi mathvariant="italic">dt</mi>
+      </mfrac>
+      <mo stretchy="false">=</mo>
+      <mrow>
+       <mfrac>
+        <mi mathvariant="italic">dρ</mi>
+        <mi mathvariant="italic">dt</mi>
+       </mfrac>
+       <mo stretchy="false">∗</mo>
+       <mi>V</mi>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mi>ρ</mi>
+      <mo stretchy="false">=</mo>
+      <mfrac>
+       <mi>p</mi>
+       <mi mathvariant="italic">RT</mi>
+      </mfrac>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mfrac>
+        <mi mathvariant="italic">dρ</mi>
+        <mi mathvariant="italic">dt</mi>
+       </mfrac>
+       <mo stretchy="false">=</mo>
+       <mfrac>
+        <mn>1</mn>
+        <mi>R</mi>
+       </mfrac>
+      </mrow>
+      <mfrac>
+       <mi>d</mi>
+       <mi mathvariant="italic">dt</mi>
+      </mfrac>
+      <mrow>
+       <mo fence="true" form="prefix" stretchy="false">(</mo>
+       <mrow>
+        <mfrac>
+         <mi>p</mi>
+         <mi>T</mi>
+        </mfrac>
+       </mrow>
+       <mo fence="true" form="postfix" stretchy="false">)</mo>
+      </mrow>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mrow/>
+       <mo stretchy="false">=</mo>
+       <mfrac>
+        <mn>1</mn>
+        <mi>R</mi>
+       </mfrac>
+      </mrow>
+      <mfrac>
+       <mrow>
+        <mover accent="true">
+         <mi>p</mi>
+         <mo stretchy="false">˙</mo>
+        </mover>
+        <mrow>
+         <mi>T</mi>
+         <mo stretchy="false">−</mo>
+         <mi>p</mi>
+        </mrow>
+        <mover accent="true">
+         <mi>T</mi>
+         <mo stretchy="false">˙</mo>
+        </mover>
+       </mrow>
+       <msup>
+        <mi>T</mi>
+        <mn>2</mn>
+       </msup>
+      </mfrac>
+     </mrow>
+    </mtd>
+   </mtr>
+   <mtr>
+    <mtd>
+     <mrow>
+      <mrow>
+       <mrow>
+        <mo stretchy="false">∑</mo>
+        <mrow>
+         <mo fence="true" form="prefix" stretchy="false">(</mo>
+         <mrow>
+          <msub>
+           <mi>m</mi>
+           <mi mathvariant="italic">flow</mi>
+          </msub>
+         </mrow>
+         <mo fence="true" form="postfix" stretchy="false">)</mo>
+        </mrow>
+       </mrow>
+       <mo stretchy="false">=</mo>
+       <mfrac>
+        <mi>V</mi>
+        <mi mathvariant="italic">RT</mi>
+       </mfrac>
+      </mrow>
+      <mrow>
+       <mover accent="true">
+        <mi>p</mi>
+        <mo stretchy="false">˙</mo>
+       </mover>
+       <mo stretchy="false">−</mo>
+       <mfrac>
+        <mi mathvariant="italic">Vp</mi>
+        <mrow>
+         <mi>R</mi>
+         <msup>
+          <mi>T</mi>
+          <mn>2</mn>
+         </msup>
+        </mrow>
+       </mfrac>
+      </mrow>
+      <mover accent="true">
+       <mi>T</mi>
+       <mo stretchy="false">˙</mo>
+      </mover>
+     </mrow>
+    </mtd>
+   </mtr>
+  </mtable>
+  <annotation encoding="StarMath 5.0">{dm} over {dt} = sum (m_flow)  newline
+-. mass flow into volume is positive sign  newline
+m=ρV  newline
+{dm} over {dt} = {dρ} over {dt}*V  newline
+ρ= {p} over {RT}  newline
+{dρ} over {dt} = {1} over {R} {d} over {dt} ({p} over {T})  newline
+ = = {1} over {R}  { dot p T - p dot T } over { T^{2} }  newline
+ sum (m_flow) = {V} over {RT} dot p  - {Vp} over {R T^{2}} dot T</annotation>
+ </semantics>
+</math>
